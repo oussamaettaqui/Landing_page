@@ -1,3 +1,4 @@
+@import url("mobile-style.css");
 :root {
     --primary-color: #4452FE;
     --dark-background: #181818;
@@ -17,5 +18,7 @@
     font-family: var(--graphik-font);
 }
 
-
+body{
+    width: 100%;
+}
 /* @import url("desktop-style.css"); */

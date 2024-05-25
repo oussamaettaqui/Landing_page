@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #4452FE;
+    --dark-background: #181818;
+    --light-text: #FFFFFF;
+    --icon-color : #02E4C0;
+    --graphik-font: 'Graphik', sans-serif;
+    --graphik-weight-normal: 400;
+    --graphik-weight-bold: 700;   
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+    font-family: var(--graphik-font);
+}
+
+
+/* @import url("desktop-style.css"); */

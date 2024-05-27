@@ -1,0 +1,13 @@
+@media (width > 600px) {
+    nav .container-nav{
+        width: 1089px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav .right-side .menu{
+        display: none;
+    }
+}

@@ -1,8 +1,13 @@
 @media (max-width: 549px) {
-    .container{
+    header{
         width: 100%;
-        height: 100vh;
+        height: 100%;
+        position: relative;
         background-color: var(--dark-background);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column; 
+        
     }
     nav{
         display: flex;
@@ -12,9 +17,11 @@
     nav{
         width: 100%;
         height: 113px;
+        margin-bottom: 57px;
     }
     nav .container-nav{
-        width: calc(549px - 40px);
+        width: calc(100% - 40px);
+        height: 100%;
         margin: auto;
         display: flex;
         align-items: center;
@@ -70,13 +77,13 @@
         position: relative;
     }
     nav .right-side .menu span {
-    width: 100%;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 3px;
-    background-color: var(--light-text);
+        width: 100%;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 3px;
+        background-color: var(--light-text);
     }
 
     nav .right-side .menu span:nth-child(1) {
@@ -96,5 +103,349 @@
         top: 20px;
         width: 20px;
     }
+    header .text-content{
+        width: 402px;
+        height: 353px;
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 57px;
+
+    }
+    header .text-content .Second-Headline{
+        width: 314px;
+        height: 206px;
+        text-align: center;
+        margin: auto;
+        font-size: 52px;
+        font-weight: var(--graphik-weight-normal);
+        line-height: 62px;
+        letter-spacing: 0.2px;
+        color: var(--light-text);
+    }
+    header .text-content .Sub-Heading{
+        width: 382px;
+        height: 120px;
+        font-size: 20px;
+        font-weight: var(--graphik-weight-normal);
+        color: var(--light-text);
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    header .buttons{
+        width: 178px;
+        height: 151px;
+        gap: 21px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 57px;
+    }
+    header .buttons .first-btn{
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.2px;
+        width: 100%;
+        height: 65px;
+        background-color: var(--primary-color); 
+        color: var(--light-text);
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+    }
+    header .buttons .second-btn{
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0.2px;
+        width: 100%;
+        height: 65px;
+        color: var(--dark-background);
+        border: 1px solid var(--light-text);
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+    }
+    header .screens{
+        width: 100%;
+        height: 455px;
+        position: relative;  
+    }
+    header .screens:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%; 
+        background-image: linear-gradient(to bottom, transparent 0%, #0E0E0E 100%);
+      }
+    header .screens .dashboard-top{
+        background-image: url("../assets/dashbord.jpeg");
+        width: 245px;
+        height: 225px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 5%;
+        left: 25%;
+        transform: rotateX(321deg) rotateY(353deg) rotateZ(313deg);
+    }
+    header .screens .board-left{
+        background-image: url("../assets/boards.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 245px;
+        height: 225px;
+        position: absolute;
+        top: 35%;
+        left: -47px;
+        transform: rotateX(322deg) rotateY(5deg) rotateZ(48deg);
+    }
+    header .screens .chat-bot-right{
+        background-image: url("../assets/chat-bot.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 245px;
+        height: 225px;
+        position: absolute;
+        top: 35%;
+        left: 60%;
+        transform: rotateX(322deg) rotateY(5deg) rotateZ(48deg);
+    }
+    /* section{
+        width: 100%;
+        height: 1414px;
+        background-color: var(--dark-background)
+
+    }
+    section .container-section{
+        width: 431px;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+
+    }
+    section .container-section .head-of-section
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 281px;
+        
+    }
+    section .container-section .headline{
+        font-size: 52px;
+        font-weight: var(--graphik-weight-normal);
+        color: var(--light-text);
+        text-align: center;
+        line-height: 62px;
+        letter-spacing: 0.2px;
+    }
+    section .container-section .paragraph{
+        color: var(--light-text);
+        padding: 0 10px;
+        font-size: 20px;
+        font-weight: var(--graphik-weight-normal);
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+    section .container-section .images{
+        width: calc(100% - 72px);
+        height: 100%;
+        margin: auto;
+        position: relative;
+    }
+    section .container-section .images .image1{
+        background-image: url("../assets/chat-bot.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 324px;
+        height: 319px;
+        position: absolute;
+        top: -35%;
+        left: 24px;
+    }
+    section .container-section .images .image2{
+        background-image: url("../assets/linechart.jpeg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 232px;
+        height: 160px;
+        position: absolute;
+        top: 70%;
+        left: 19%;
+    }
+    section .container-section .content-rows{
+        width: 309px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 350px;
+        gap: 50px;
+        background-color: aqua;
+
+    }
+    section .container-section .content-rows .text-block{
+        padding: 20px;
+    }
+    section .container-section .content-rows .text-block .headline{
+        width: 204px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section .container-section .content-rows .text-block .headline .title{
+        width: 153px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+    section .container-section .content-rows .text-block .headline svg{
+        width: 26px;
+        height: 26px;
+        margin-bottom: 25px;
+    }
+    section .container-section .content-rows .text-block .paragraph{
+        font-size: 16px;
+        font-weight: var(--graphik-weight-normal);
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        text-align: start;
+
+    } */
+
+    section {
+        width: 100%;
+        background-color: var(--dark-background);
+      }
+      
+      .container-section { 
+        width: 431px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      .container-section .head-of-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+      }
+      
+      .container-section .headline {
+        font-size: 52px;
+        font-weight: var(--graphik-weight-normal);
+        color: var(--light-text);
+        text-align: center;
+        line-height: 62px;
+        letter-spacing: 0.2px;
+      }
+      
+      .container-section .paragraph {
+        color: var(--light-text);
+        padding: 0 10px;
+        font-size: 20px;
+        font-weight: var(--graphik-weight-normal);
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+      }
+      
+      .container-section .images {
+        width: calc(100% - 72px);
+        margin: auto;
+        position: relative;
+        margin-bottom: 50px;
+      }
+      
+      .container-section .images .image1,
+      .container-section .images .image2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        margin: auto;
+      }
+      
+      .container-section .images .image1 {
+        background-image: url("../assets/chat-bot.jpeg");
+        width: 324px;
+        height: 319px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      
+      .container-section .images .image2 {
+        background-image: url("../assets/linechart.jpeg");
+        width: 232px;
+        height: 160px;
+        margin: auto;
+        position: absolute;
+        top: 230px;
+        left: 60px;
+      }
+      
+      .container-section .content-rows {
+        width: 309px; 
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: auto;
+        margin-top: 27px;
+      }
+      
+      .container-section .content-rows .text-block {
+        padding: 20px;
+        margin: auto;
+        
+      }
+      
+      .container-section .content-rows .text-block .headline {
+        width: 204px;
+        display: flex;
+        align-items: start;
+      }
+      
+      .container-section .content-rows .text-block .headline .title {
+        width: 153px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        padding: 0 10px;
+      }
+      .container-section .content-rows .text-block .headline svg{
+        width: 30px;
+        height: 30px;
+      }
+      .container-section .content-rows .text-block .headline .with-margin {
+        margin-top: 10px;
+      }
+      
+      .container-section .content-rows .text-block .paragraph {
+        font-size: 16px;
+        font-weight: var(--graphik-weight-normal);
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        text-align: start;
+        padding: 10px;
+        
+      }
+      
 
 }

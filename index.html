@@ -22,6 +22,14 @@
             </div>
         </div>
     </nav>
+    <div class="menu-display">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+    </div>
     <div class="text-content">
         <p class="Second-Headline">
             Work at the speed of thought.            
@@ -164,5 +172,24 @@
         </div>
     </div>
 </footer>
+<script>
+    let menu = document.querySelector('.menu-display');
+    let menuTrigger = document.querySelector('.menu');
+    let isopen = false;
+    menuTrigger.addEventListener('click', () => {
+    if(isopen)
+    {
+        menu.classList.remove("open");
+        menu.classList.add("close");
+        isopen = false;
+    }
+    else{
+        menu.classList.remove("close");
+        menu.classList.add("open");
+        isopen = true;
+    }
+});
+
+</script>
 </body>
 </html>

@@ -103,6 +103,42 @@
         top: 20px;
         width: 20px;
     }
+    /* MENU */
+    .menu-display{
+      position: relative;
+      z-index: 10;
+      transform: translateX(-100%);
+      transition: all 1s ease-in-out;
+    }
+    .open{
+      transform: translateX(0);
+    }
+    .close{
+      transform: translateX(-100%);
+    }
+    
+    .menu-display ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      background-color: var(--dark-background);
+      width: 100%;
+      position: absolute;
+      top: 10%;
+      left: 0;
+      padding: 0 0 50px 0;
+    }
+    .menu-display ul li{
+      list-style: none;
+    }
+    .menu-display ul li a{
+      text-decoration: none;
+      color: var(--light-text);
+      cursor: pointer;
+      
+    }
+
     header .text-content{
         width: 402px;
         height: 353px;

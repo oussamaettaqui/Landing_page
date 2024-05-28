@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    nav .right-side .menu{
+    nav .menu{
         display: none;
     }
     nav .container-nav ul{

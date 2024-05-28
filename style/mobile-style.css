@@ -58,13 +58,11 @@
     nav .container-nav ul{
       display: none;
     }
-    nav .right-side{
-        width: 221px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+    nav .container-nav .login{
+      display: none;
     }
-    nav .right-side a{
+   .menu-display ul li .login-menu{
+        display: none;
         text-decoration: none;
         color: var(--light-text);
         font-size: 17px;
@@ -74,12 +72,12 @@
         padding: 10px  26px 10px 26px;
         border: 1px solid var(--light-text);
     }
-    nav .right-side .menu{
+    nav  .menu{
         width: 44px;
         height: 27px;
         position: relative;
     }
-    nav .right-side .menu span {
+    nav .menu span {
         width: 100%;
         display: inline-block;
         position: absolute;
@@ -89,19 +87,19 @@
         background-color: var(--light-text);
     }
 
-    nav .right-side .menu span:nth-child(1) {
+    nav .menu span:nth-child(1) {
         position: absolute;
         top: 0;
         width: 38px;
     }
 
-    nav .right-side .menu span:nth-child(2) {
+    nav .menu span:nth-child(2) {
         position: absolute;
         top: 10px;
         width: 30px;
     }
 
-    nav .right-side .menu span:nth-child(3) {
+    nav .menu span:nth-child(3) {
         position: absolute;
         top: 20px;
         width: 20px;
@@ -143,7 +141,7 @@
     }
 
     header .text-content{
-        width: 402px;
+        width: 302px;
         height: 353px;
         margin: auto;
         padding: 10px;
@@ -151,20 +149,20 @@
 
     }
     header .text-content .Second-Headline{
-        width: 314px;
+        width: 300px;
         height: 206px;
         text-align: center;
         margin: auto;
-        font-size: 52px;
+        font-size: 50px;
         font-weight: var(--graphik-weight-normal);
         line-height: 62px;
         letter-spacing: 0.2px;
         color: var(--light-text);
     }
     header .text-content .Sub-Heading{
-        width: 382px;
+        width: 300px;
         height: 120px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: var(--graphik-weight-normal);
         color: var(--light-text);
         line-height: 30px;
@@ -212,7 +210,7 @@
         cursor: pointer;
     }
     header .screens .width-imgs{
-        width: 400px;
+        width: 300px;
         height: 455px;
         position: relative;  
     }
@@ -232,35 +230,35 @@
       }
     header .screens .dashboard-top{
       background-image: url("../assets/dashbord.jpeg");
-      width: 245px;
-      height: 225px;
+      width: 200px;
+      height: 200px;
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
       top: 0;
-      left: 35%;
+      left: 31%;
       transform: rotateX(321deg) rotateY(353deg) rotateZ(313deg);
     }
     header .screens .board-left{
         background-image: url("../assets/boards.jpeg");
         background-repeat: no-repeat;
         background-size: contain;
-        width: 245px;
-        height: 225px;
+        width: 200px;
+        height: 200px;
         position: absolute;
-        top: 29%;
-        left: -30px;
+        top: 23%;
+        left: -60px;
         transform: rotateX(322deg) rotateY(5deg) rotateZ(48deg);
     }
     header .screens .chat-bot-right{
         background-image: url("../assets/chat-bot.jpeg");
         background-repeat: no-repeat;
         background-size: contain;
-        width: 245px;
-        height: 225px;
+        width: 200px;
+        height: 200px;
         position: absolute;
-        top: 30%;
-        left: 76%;
+        top: 24%;
+        left: 73%;
         transform: rotateX(322deg) rotateY(5deg) rotateZ(48deg);
     }
     section {
@@ -269,7 +267,7 @@
       }
       
       .container-section { 
-        width: 431px;
+        width: 331px;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -278,7 +276,7 @@
         padding-top: 163px;
       }
       .container-section .container-2{
-        width: 549px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -330,7 +328,7 @@
         height: 319px;
         position: relative;
         top: 0;
-        left: 20%;
+        left: -5%;
       }
       
       .container-section .images .image2 {
@@ -340,7 +338,7 @@
         margin: auto;
         position: absolute;
         top: 230px;
-        left: 28%;
+        left: 10%;
       }
       
       .container-section .content-rows {

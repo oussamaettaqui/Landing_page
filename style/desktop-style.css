@@ -1,4 +1,4 @@
-@media (width > 549px) {
+@media (width > 349px) {
     nav .container-nav{
         width: 1089px;
         height: 100%;
@@ -30,10 +30,20 @@
         text-align: center;
         cursor: pointer;
     }
+    nav .container-nav .login{
+        display: block;
+        text-decoration: none;
+        color: var(--light-text);
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 2.5px;
+        padding: 10px  26px 10px 26px;
+        border: 1px solid var(--light-text);
+      }
     header .text-content{
         width: 729px;
         height: 353px;
-        /* margin: auto; */
         padding: 10px;
         margin-bottom: 57px;
 

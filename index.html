@@ -20,14 +20,13 @@
                     <li><a href="">Product</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
+                    
                 </ul>
-                <div class="right-side">
-                    <a href="">Login</a>
-                    <div class="menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <a href="" class="login">Login</a>
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </nav>
@@ -37,6 +36,7 @@
                 <li><a href="">Product</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
+                <li><a href="" class="login-menu">Login</a></li>
             </ul>
         </div>
         <div class="text-content">
@@ -369,6 +369,7 @@
     <script>
         let menu = document.querySelector('.menu-display');
         let menuTrigger = document.querySelector('.menu');
+        let login_btn = document.querySelector('.login-menu');
         let isopen = false;
         console.log({ window });
 
@@ -377,6 +378,7 @@
             if (isopen) {
                 menu.classList.remove("open");
                 menu.classList.add("close");
+                login_btn.style.display= "block";
                 isopen = false;
             }
             else {
@@ -387,13 +389,7 @@
 
         });
         isopen = false;
-        // window.addEventListener('resize', () => {
-        //     if (window.innerWidth > 549) {
-        //         menu.classList.remove("open");
-        //         menu.classList.remove("close");
-        //         console.log("jhhjhjjj");
-        //     }
-        // });
+
 
     </script>
 </body>
